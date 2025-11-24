@@ -29,8 +29,8 @@ export default defineType({
       of: [{ type: "image" }],
     }),
     defineField({
-      name: "link",
-      title: "Project Link",
+      name: "demoLink",
+      title: "Demo Link",
       type: "url",
       validation: (Rule) =>
         Rule.uri({ scheme: ["http", "https"] }).error(

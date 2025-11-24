@@ -8,7 +8,10 @@ import { it } from "node:test";
 const AboutSection = () => {
   const { statistics } = getStatistics();
   return (
-    <section id="about" className="relative">
+    <section
+      id="about"
+      className="relative w-full flex justify-center items-center"
+    >
       <Effect className="-left-32 md:-left-44 -top-12" />
       <article className="relative max-w-[800px] max-auto bg-background/90 border rounded-lg p-6 flex flex-col gap-y-6">
         <Effect
@@ -18,7 +21,7 @@ const AboutSection = () => {
         />
         <SectionTitle
           title="about me"
-          description="who am i?"
+          description="who am i ?"
           className="items-start"
         />
         <p className="text-lg">
